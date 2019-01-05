@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<list key="org.eclipse.ui.internal.wizards.datatransfer.SmartImportRootWizardPage.knownSources">
+		<item value="E:\Users\jungl\eclipse-workspace\QFirstJava"/>
+		<item value="E:\Users\jungl\eclipse-workspace\SeleniumTests"/>
+		<item value="E:\Users\jungl\eclipse-workspace"/>
 		<item value="D:\eclipse-workspace"/>
 		<item value="D:\Q\Selenium\eclipse-workspace"/>
 	</list>
