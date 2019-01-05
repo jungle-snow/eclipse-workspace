@@ -1,0 +1,10 @@
+package ABCpackages;
+
+public class TestGetCommands {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
