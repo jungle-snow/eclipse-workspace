@@ -29,13 +29,15 @@ public class UseElementLocatorTechniques {
 
 	public void elementLocatorTechniquesUsingAmazon() {
 		try {
-			invokeBrowser("https://www.facebook.com/");
+			invokeBrowser("http://www.amazon.com/");
 			driver.findElement(By.linkText("Your Amazon.com")).click();
 			driver.navigate().back();
 			driver.findElement(By.id("twotabsearchtextbox")).sendKeys("Sunglass");
 			driver.findElement(By.className("nav-input")).click();
 			driver.navigate().back();
 			driver.findElement(By.partialLinkText("Today")).click();
+			driver.navigate().back();
+			driver.findElement(By.xpath("//a[@id='nav-link-accountList']/span[1]")).click();
 		} catch (Exception e) {
 			e.printStackTrace();
 		}
@@ -44,9 +46,9 @@ public class UseElementLocatorTechniques {
 
 	public void elementLocatorTechniqueUsingFacebook() {
 		try {
-			invokeBrowser("http://www.facebook.com");
+			invokeBrowser("https://www.facebook.com");
 			driver.findElement(By.name("firstname")).sendKeys("QTest");
-			driver.findElement(By.cssSelector("input#email")).sendKeys("abc@gmail.com");
+			driver.findElement(By.cssSelector("input#email")).sendKeys("abc@gmail.com");			
 			//closeBrowser();
 		} catch (Exception e) {
 			e.printStackTrace();
@@ -59,8 +61,8 @@ public class UseElementLocatorTechniques {
 
 	public static void main(String[] args) {
 		UseElementLocatorTechniques obj = new UseElementLocatorTechniques();
-		//obj.elementLocatorTechniquesUsingAmazon();
-		obj.elementLocatorTechniqueUsingFacebook();
+		obj.elementLocatorTechniquesUsingAmazon();
+		//obj.elementLocatorTechniqueUsingFacebook();
 
 	}
 
